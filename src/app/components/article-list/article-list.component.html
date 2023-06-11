@@ -1,0 +1,24 @@
+<h2>Article List</h2>
+
+<div *ngFor="let article of articles">
+    <h3>
+        <a
+            [title]="article.title + ' details'"
+            [routerLink]="['/articles', article.id]">
+            {{ article.title }}
+        </a>
+    </h3>
+
+    <p *ngIf="article.text">
+        Text: {{ article.text }}
+    </p>
+
+    <button type="button" (click)="share()">
+        Share
+    </button>
+
+    <app-article-alerts 
+        [article]="article" 
+        (notify)="onNotify()">
+    </app-article-alerts>
+</div>
