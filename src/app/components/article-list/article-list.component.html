@@ -1,6 +1,4 @@
-<h2>Article List</h2>
-
-<div *ngFor="let article of articles">
+<div *ngFor="let article of articles" class="article-item">
     <h3>
         <a
             [title]="article.title + ' details'"
@@ -8,6 +6,9 @@
             {{ article.title }}
         </a>
     </h3>
+
+    <div class="image-placeholder">
+    </div>
 
     <p *ngIf="article.text">
         Text: {{ article.text }}

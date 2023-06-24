@@ -8,6 +8,38 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/story" routerLinkActive="active">Story</a></li>
+        <li><a routerLink="/photos" routerLinkActive="active">Photos</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-content">
+    <div class="content">
+      <app-root></app-root>
+    </div>
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="assets/profile-picture.png" alt="Profile Photo" class="profile-photo">
+      </div>
+      <div class="profile-text">
+        <h2>Respa Putra</h2>
+        <p>Software Engineer</p>
+      </div>
+      <ul class="social-links">
+        <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#" class="social-link"><i class="fab fa-github"></i></a></li>
+        <li><a href="#" class="social-link"><i class="fab fa-gitlab"></i></a></li>
+        <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </aside>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2023 www.respa.nl</p>
+  </div>
 </body>
 </html>
