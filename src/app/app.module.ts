@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
 import { ArticleAlertsComponent } from './components/article-alerts/article-alerts.component';
 import { ArticleDetailsComponent } from './components/article-details/article-details.component';
+import { ShareButtonComponent } from './components/share-button/share-button.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ArticleDetailsComponent } from './components/article-details/article-de
     ArticleListComponent,
     ArticleAlertsComponent,
     ArticleDetailsComponent,
+    ShareButtonComponent,
   ],
   imports: [
     BrowserModule,

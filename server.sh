@@ -24,3 +24,5 @@ chmod 700 ~/.ssh/authorized_keys && chmod 640 ~/.ssh/authorized_keys2
 echo "Create HOST, USERNAME, and KEY variable in your project setting (Secrets and Variables)."
 echo "Finish!"
 
+# setup nginx sites-availables sites-enabled
+# ......

@@ -1,41 +1,40 @@
 // Variables
 $primary-color: #77a9de;
 $secondary-color: #6c757d;
-
-// Global styles
-// Standard body background
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
+$box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
 // Grid like background
 body {
-    background-color: #f8f8f8;
-    background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0ee;
+    background-image: linear-gradient(#e4e4e2 1px, transparent 1px), linear-gradient(90deg, #e4e4e2 1px, transparent 1px);
     background-size: 20px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 // Header styles
 .header {
     background-color: #242424;
     color: #fff;
-    padding: 10px 10px;
-    text-align: center;
+    min-width: 1000px;
 
     .navbar {
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            padding-left: 100px;
             display: flex;
             justify-content: center;
 
             li {
-                margin: 0 10px;
-
+                font-family: 'Courier New', Courier, monospace;
                 a {
                     color: #fff;
                     text-decoration: none;
@@ -73,14 +72,17 @@ body {
 .main-content {
     display: flex;
     justify-content: space-between;
+    
 
     .sidebar {
+        min-width: 200px;
         flex-basis: 15%;
         background-color: #fff;
         margin: 100px 100px 100px 25px;
         padding: 20px;
         border-radius: 20px;
         height: fit-content;
+        box-shadow: $box-shadow;
 
         .profile {
             display: flex;
@@ -141,11 +143,13 @@ body {
     }
 
     .content {
+        min-width: 500px;
         flex-basis: 85%;
         background-color: #fff;
         margin: 100px 0px 100px 100px;
         padding: 20px;
         border-radius: 20px;
+        box-shadow: $box-shadow;
 
         h2 {
             font-size: 24px;

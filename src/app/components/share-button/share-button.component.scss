@@ -1,0 +1,44 @@
+.share-button {
+  position: relative;
+  color: #696969;
+  // border-color: #cacaca67;
+  cursor: pointer;
+  font-size: 20pt;
+  outline: none;
+
+  .tooltip {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translateX();
+    background-color: #b2b6b14d;
+    color: #717171;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+    &.tooltip-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .tooltip-item {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      cursor: pointer;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}

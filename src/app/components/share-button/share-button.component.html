@@ -1,0 +1,14 @@
+<button class="share-button btn btn-sm d-inline m-2" (click)="toggleTooltip()">
+  <i class="fa-regular fa-share-from-square"></i>
+  <ul class="tooltip" [ngClass]="{ 'tooltip-active': showTooltip }">
+    <li class="tooltip-item" (click)="shareOnFacebook()">
+      <i class="fab fa-facebook"></i>
+    </li>
+    <li class="tooltip-item" (click)="shareOnTwitter()">
+      <i class="fab fa-twitter"></i>
+    </li>
+    <li class="tooltip-item" (click)="copyLink()">
+      <i class="fas fa-copy"></i>
+    </li>
+  </ul>
+</button>

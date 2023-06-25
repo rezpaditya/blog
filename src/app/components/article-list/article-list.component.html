@@ -1,8 +1,6 @@
 <div *ngFor="let article of articles" class="article-item">
     <h3>
-        <a
-            [title]="article.title + ' details'"
-            [routerLink]="['/articles', article.id]">
+        <a [title]="article.title + ' details'" [routerLink]="['/articles', article.id]">
             {{ article.title }}
         </a>
     </h3>
@@ -10,16 +8,11 @@
     <div class="image-placeholder">
     </div>
 
-    <p *ngIf="article.text">
+    <!-- <p *ngIf="article.text">
         Text: {{ article.text }}
-    </p>
+    </p> -->
 
-    <button type="button" (click)="share()">
-        Share
-    </button>
-
-    <app-article-alerts 
-        [article]="article" 
-        (notify)="onNotify()">
-    </app-article-alerts>
+    <app-share-button></app-share-button>
+    <!-- <app-article-alerts [article]="article" (notify)="onNotify()"> -->
+    <!-- </app-article-alerts> -->
 </div>
