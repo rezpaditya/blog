@@ -1,4 +1,4 @@
-FROM node:latest as build
+FROM node:slim as build
 
 WORKDIR /usr/src/app
 
@@ -9,7 +9,7 @@ COPY . .
 
 RUN npm run build --prod
 
-FROM nginx:latest
+FROM nginx:stable-alpine3.17-slim
 
 COPY --from=build /usr/src/app/dist/blog /usr/share/nginx/html
 
